@@ -1,0 +1,192 @@
+:root{
+    --background:#1F4690;
+    --history:#3A5BA0;
+    --search:#3A5BA0;
+    --header: #FFA500;
+    --searchFont: #FFA500;
+    --historyFont: #FFA500;
+    --todayBackground: #FFE5B4;
+
+}
+
+
+body{
+    background-color: var(--background);
+    width: 99%;
+}
+header{
+    color: var(--header);
+    font-weight: 800;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 20px;
+    border-bottom:2px solid #FFA500;
+}
+.contentContainer{
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.leftContainer{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+#searchForm{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+#searchForm h1{
+    color: var(--header);
+}
+#searchInput{
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+#searchBtn, #clearHistoryBtn{
+    color: var(--searchFont);
+    background-color: var(--search);
+    border: none;
+    border-radius: 5px;
+    margin: 15px 0px 0px;
+    padding: 5px;
+}
+#formDiv{
+    padding: 20px 0;
+}
+
+#historyContainer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0px auto;
+    padding: 15px 0;
+    border-top: 2px solid var(--header);
+}
+#historyContainer button{
+    color: var(--historyFont);
+    background-color: var(--history);
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+#todayContainer{
+    width: 100%;
+    margin: 2px;
+    padding: 5px;
+   
+}
+.forecastSectionContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+#forecastContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+   
+}
+.btn-success{
+    background-color: green;
+    border: none;
+}
+.btn-warning{
+    background-color: orange;
+    border: none;
+}
+.btn-danger{
+    background-color: red;
+    border: none;
+}
+.h3.card-title{
+    display: flex;
+    width: 90%;
+    font-size:  40px;
+    color: var(--header);
+    justify-content: space-between;
+}
+.weather-img{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+.card-body{
+    padding: 10px;
+    outline: 1px solid var(--header);
+    background-color: var(--search);
+}
+
+#forecastContainer .col-12{
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    color: var(--header);
+}
+h5.card-title{
+    margin: auto;
+    font-size: 15px;
+    
+}
+
+.p-2{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    color: #FFFFFF;
+    font-size: 14px;
+    min-height: 325px;
+}
+.card-text{
+    color: #FFFFFF;
+}
+p{
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 800px) {
+header{
+    font-size: 30px;
+    margin: 30px 10px 0px;
+}
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+}
+.leftContainer{
+    width: 90%;
+    margin: auto;
+}
+#historyContainer{
+    display: none;
+}
+.h3.card-title{
+    font-size: 20px;
+}
+.weather-img{
+    height: 40px;
+    width: 40px;
+}
+#forecastContainer{
+    flex-direction: column;
+}
+.card-body{
+    width: 60%;
+    margin: 20px auto;
+}
+}
